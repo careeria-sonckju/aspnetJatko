@@ -9,7 +9,7 @@
     $(window).on('load', function () {
         if (@ViewBag.LoginError == 1) {
             alert("Kirjautuminen epäonnistui")
-            $('#loginForm').modal('show');
+            $('#loginRuutu').modal('show');
         }
     });
 </script>
@@ -22,7 +22,7 @@
     <p>Nyt on @DateTime.Now</p>
     <p>Nyt on @DateTime.Now.ToString(new CultureInfo("en-US"))</p>
     <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#login">Avaa modal login</button>
-    <div class="modal" id="login">
+    <div class="modal" id="loginRuutu">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
